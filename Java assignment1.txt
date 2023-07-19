@@ -1,0 +1,24 @@
+1. What is programming language?
+Ans. Programming language is a set of instructions which is used to perform some task by the cpu or machine by human.
+
+2. Why do we need a programming language?
+Ans. Programming languages are establish the communication between human and computers so that human can perform some task with the help of computer and decrease their work and efforts.
+
+3. What are features of java?
+Ans. Java is an object oriented programming language.
+     Java is platform independent.
+     Java is portable.
+     Java is secured.
+     Java is an open source language.
+
+4. What is an object?
+Ans. An object is an instance of class. It represents a real world entity.
+
+5. What is a class?
+Ans. Class is a user-defined data-type.It is a blueprint of an object which have some methods and behaviour.
+
+6. Explain about the main method in java.
+Ans. Main method defines the starting point of program. JVM start their execution form the main method.
+     Syntax : public static void main(String[] args){
+                     //body
+               }
