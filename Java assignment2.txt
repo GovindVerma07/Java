@@ -1,0 +1,42 @@
+1. What is statically typed and dynamically typed programming language?
+Ans. If the memory of the variable is given during the compilation time itself  or for which data type is required for declaring the  
+     variables such type of programming languages are called statically typed for e.g. Java,c,c++.
+
+     If the memory of the variable is given during the execution time itself or for which data type is not required for declaring the
+     variables such type of programming languages are called dynamically typed for e.g. python,javascript. 
+
+2. What is the variable in java?
+Ans. Variable is a container which stores some data or value.
+
+3. How to assign a value to variable?
+Ans. We assign a value to a variable in java according to this syntax : 
+       data_type variableName = value;
+     for e.g. int value = 5;
+
+4. What are primitive data types in java?
+Ans. Primitive data-types are predefined in languages. In java we have 8 primitive data types such as
+     byte,short,int,long,float,double,char,boolean.
+
+5. What are the identifiers in java?
+Ans. Identifiers are the name of variable or method or classes which can uniquely identify them. Identifiers are user defined.
+
+6. List the Operators in Java.
+Ans. Following are the operators in java : 
+     i. Arithmatic operators : +,-,*,/,%,++,--
+     ii. Logical operators : &&,||,!
+     iii. Comparison operators : >,<,>=,<=,!=,==
+     iv. Assignment operators : =,+=,-=
+     v. Bitwise operators : &,|
+
+7. Explain about Increment and Decrement operators and give an example.
+Ans. Increment operator is increase the value of operand by 1. for e.g. 
+      int i = 15;
+      i++;
+      System.out.println(i); //It gives the result 16
+
+     Decrement opreator is decrease the value of operand by 1. for e.g.
+      int i = 15;
+      i--;
+      System.out.println(i); //It gives the result 14
+   
+     
