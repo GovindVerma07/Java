@@ -1,0 +1,53 @@
+1. What are the conditional operators in java?
+Ans. Conditional operators checks the condition and decides the desired result on the basis of conditions.
+     In java there are 3 conditional operators i.e. 
+     i. Conditional AND (&&)
+     ii. Conditional OR (||)
+     iii. Ternary operator(?:)
+
+2. What are the types of operators based on the number of operands?
+Ans. In java there are 3 main categories of operators are : 
+     i. Unary operators (unary plus (+),unary minus (-),increment (++),decrement (--),Not (!))
+     ii. Binary operators (+,-,*,/,% etc.)
+     iii. Ternary operator (?:)
+
+3. What is the use of Switch case in java programming?
+Ans. Switch case is used instead of multiple if-else statements. It is used to check multiple conditions and provide a convenient way to 
+     select one of many code blocks to be executed.
+
+4. What are the priority levels of arithmetic operators in java?
+Ans. Increment or decrement > * or / > + or - .
+
+5. What are the conditional statements and use of conditional statements in java?
+Ans. Conditional statements are used to make decisions in program based on certain conditions. 
+     2 type of conditional statements that are if-else and switch.
+
+6. What is the syntax of if-else statement?
+Ans. if(condition1){
+            //if body
+        }
+     else if(condition2){
+            // else if body
+      }
+     else{
+            // else body
+      }
+
+7. What are the 3 types of iterative statements in java?
+Ans. The 3 types of iterative statements in java are - 
+     i. for loop
+     ii. while loop
+     iii. do-while loop
+
+8. Write the difference between for loop and do-while loop.
+Ans. for loop checks the condition first then execute body whereas do-while loop executes the body first then checks the condition.
+     do-while loop executs their body atleast once whereas it is not true for for loop. 
+
+9. Write a program to print numbers from 1 to 10.
+Ans. public class Example{
+       public static void main(String[] args){
+            for(int i = 1; i<=10; i++){
+              System.out.println(i);
+            }
+         }
+     }
