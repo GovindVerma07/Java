@@ -1,0 +1,284 @@
+1. Write a Program to print Alphabets A,B,C,D,E,F,G,H using pattern programming logic.
+Ans. public class PatternAssign{
+       public static void main(String[] args){
+        int n = 7;
+        for(int i = 0; i < n; i++){
+            //print A
+            for(int j = 0; j < n; j++){
+               if(i==0 && j>0 && j<(n-1)/2 || j==0 && i>0 || j==(n-1)/2 && i>0 || i==(n-1)/2 && j<=(n-1)/2){
+                System.out.print("* ");
+               }
+               else{
+                System.out.print("  ");
+               }
+            }
+
+            //print B
+            for(int j = 0; j < n; j++){
+               if(i==0 && j<(n-1)/2 || j==0 || i==(n-1)/2 && j<(n-1)/2 || i==(n-1) && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<(n-1)/2 ||
+               j==(n-1)/2 && i>(n-1)/2 && i<(n-1)) {
+                System.out.print("* ");
+               }
+               else{
+                System.out.print("  ");
+               }
+            }
+
+            //print C
+            for(int j = 0; j < n; j++){
+               if(i==0 && j>0 && j<(n-1)/2 || j==0 && i>0 && i<(n-1) || i==(n-1) && j>0 && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<=(n-1)/4 ||
+               j==(n-1)/2 && i>3*(n-1)/4 && i<(n-1)){
+                System.out.print("* ");
+               }
+               else{
+                System.out.print("  ");
+               }
+            }
+
+            //print D
+            for(int j = 0; j < n; j++){
+               if(j==0 || i==0 && j<(n-1)/2 || i==(n-1) && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<(n-1)){
+                System.out.print("* ");
+               }
+               else{
+                System.out.print("  ");
+               }
+            }
+
+            //print E
+            for(int j = 0; j < n; j++){
+               if(i==0 && j<=(n-1)/2 || i==(n-1) && j<=(n-1)/2 || i==(n-1)/2 && j<=(n-1)/2 || j==0){
+                System.out.print("* ");
+               }
+               else{
+                System.out.print("  ");
+               }
+            }
+
+            //print F
+            for(int j = 0; j < n; j++){
+               if(j==0 || i==0 && j<=(n-1)/2 || i==(n-1)/2 && j<=(n-1)/2){
+                System.out.print("* ");
+               }
+               else{
+                System.out.print("  ");
+               }
+            }
+
+            //print G
+            for(int j = 0; j < n; j++){
+               if(j==0 && i>0 && i<(n-1) || i==0 && j>0 && j<(n-1)/2 || i==(n-1) && j>0 && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<=(n-1)/4 ||
+               j==(n-1)/2 && i>(n-1)/2 && i<(n-1) || i==(n-1)/2 && j>(n-1)/4 && j<=(n-1)/2){
+                System.out.print("* ");
+               }
+               else{
+                System.out.print("  ");
+               }
+            }
+             
+            //print H 
+            for(int j = 0; j < n; j++){
+               if(j==0 || j==(n-1)/2 || i==(n-1)/2 && j<=(n-1)/2){
+                System.out.print("* ");
+               }
+               else{
+                System.out.print("  ");
+               }
+            }
+            System.out.println();
+        }
+    }
+  }
+
+2. Write a program to print triangle using star pattern programming logic.
+Ans. public class TrianglePattern {
+      public static void main(String[] args){
+        int n = 8;
+        for(int i = 0; i < (n-1); i++){
+            for(int j = 0; j < (n-1); j++){
+                if((i+j)==(n-1)/2 || (j-i)==(n-1)/2 || i==(n-1)/2){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+  }
+
+3. Write a program to print 
+Ans. public class ImagePattern {
+      public static void main(String[] args){
+        int n = 14;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                if(i==0 || j==0 || j==(n-1) || i==(n-1) || (i+j)<=(n-1)/2 || (j-i)>=(n-1)/2){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    
+  }
+
+4. Write a program to print PW SKILLS using pattern programming logic.
+Ans. public class PwSkillsPattern {
+      public static void main(String[] args){
+      int n = 7;
+       for(int i = 0; i < n; i++){
+        //print P
+        for(int j = 0; j < n; j++){
+            if(j==0 || i==0 && j<(n-1)/2 || i==(n-1)/2 && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<(n-1)/2){
+                  System.out.print("* ");
+            }
+            else{
+                  System.out.print("  ");
+            }
+        }
+
+        //print W
+         for(int j = 0; j < n; j++){
+            if(j==0 || j==(n-1) || (i+j)==(n-1) && i>j || i==j && i>=(n-1)/2){
+                  System.out.print("* ");
+            }
+            else{
+                  System.out.print("  ");
+            }
+        }
+
+        System.out.print("          ");
+        //print S
+         for(int j = 0; j < n; j++){
+            if(i==0 && j>0 && j<(n-1)/2 || j==0 && i>0 && i<(n-1)/2 || i==(n-1)/2 && j>0 && j<(n-1)/2 || j==(n-1)/2 && i>(n-1)/2 && 
+            i<(n-1) || i==(n-1) && j>0 && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<=(n-1)/4 || j==0 && i<(n-1) && i>3*(n-1)/4){
+                  System.out.print("* ");
+            }
+            else{
+                  System.out.print("  ");
+            }
+        }
+
+        //print K
+           for(int j = 0; j < n; j++){
+            if(j==0 || (j+i)==(n-1)/2 || (i-j)==(n-1)/2){
+                  System.out.print("* ");
+            }
+            else{
+                  System.out.print("  ");
+            }
+        }
+
+        //print I
+           for(int j = 0; j < n; j++){
+            if(i==0 && j<(n-1)/2 || i==(n-1) && j<(n-1)/2 || j==(n-1)/4){
+                  System.out.print("* ");
+            }
+            else{
+                  System.out.print("  ");
+            }
+        }
+
+        //print L
+          for(int j = 0; j < n; j++){
+            if(j==0 || i==(n-1) && j<=(n-1)/2){
+                  System.out.print("* ");
+            }
+            else{
+                  System.out.print("  ");
+            }
+        }
+
+        //print L
+          for(int j = 0; j < n; j++){
+            if(j==0 || i==(n-1) && j<=(n-1)/2){
+                  System.out.print("* ");
+            }
+            else{
+                  System.out.print("  ");
+            }
+        }
+
+        //print S
+         for(int j = 0; j < n; j++){
+            if(i==0 && j>0 && j<(n-1)/2 || j==0 && i>0 && i<(n-1)/2 || i==(n-1)/2 && j>0 && j<(n-1)/2 || j==(n-1)/2 && i>(n-1)/2 &&
+            i<(n-1) || i==(n-1) && j>0 && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<=(n-1)/4 || j==0 && i<(n-1) && i>3*(n-1)/4){
+                  System.out.print("* ");
+            }
+            else{
+                  System.out.print("  ");
+            }
+        }
+        System.out.println();
+    }  
+}
+}
+
+5. Write a program to print your Full Name using pattern programming logic.
+Ans.     public static void main(String[] args) {
+        int n = 7;
+        for(int i =0 ;i<n;i++){
+            for(int j =0;j<n;j++){
+                if(i==0 && j>0 && j<(n-1) || i==(n-1) && j>0 && j<(n-1) || j==0 && i>0 && i<(n-1) || j==(n-1) &&  i>(n-1)/2 && i<(n-1) || 
+                 i==(n-1)/2 && j>=(n-1)/2 || i==1&& j==(n-1)){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("  ");
+            for(int j =0;j<n;j++){
+                if(i==0 && j>0 && j<(n-1) || i==(n-1) && j>0 && j<(n-1) || j==0 && i>0 && i<(n-1) || j==(n-1) && i>0 && i<(n-1)){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+             System.out.print("  ");
+            for(int j =0;j<n;j++){
+                if(i==2*j || i==4 && j==4 || i==2 && j==5 || i==0 && j==6){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+         System.out.print("  ");
+            for(int j =0;j<n;j++){
+                if(i==0 || i==(n-1) || j==(n-1)/2){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+             System.out.print("  ");
+            for(int j =0;j<n;j++){
+                if(j==0 || j==(n-1) || i==j){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+             System.out.print("  ");
+            for(int j =0;j<n;j++){
+                if(i==0 && j<(n-1) || i==(n-1) && j<(n-1) || j==0 || j==(n-1) && i>0 && i<(n-1)){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    
+}
