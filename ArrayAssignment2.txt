@@ -1,0 +1,61 @@
+1. What do you mean by an Array?
+Ans. An Array is a collection of similar types of data.
+
+2. How to create an Array?
+Ans. An Array is created by using square brackets[] like - 
+     data_type[] variable_name = new data_type[size]; or
+     data_type []variable_name = {element1,element2,...}; or
+     data_type variable_name[] = {elements_by_comma_seprated};
+
+3. Can we change the size of an Array at run time?
+Ans. No, we can't change the size of an Array at run time.
+
+4. Can you declare an array without assigning the size of an Array?
+Ans. Yes, you can declare an Array without assigning the size but you must provide the size before using the array to store elements.
+     for e.g. int[] arr;          //declaration
+              arr = new int[5];   //size assigning
+
+5. What is the default value of Array?
+Ans. When you declare an Array its elements are automatically initialized with default values based on their data types such as - 
+     For int/byte/sort/long data type the default value is 0.
+     For floating point numbers(float/double) the default value is 0.0.
+     For char data type the default value is null or 0 ASCII value.
+     For String data type the default value of array is null.
+     For boolean data type the default value of array is false.
+
+6. What is a 1D Array with an example?
+Ans. 1D Array stores a single list of similar type of data. 1D array is a normal array.
+
+7. Write a program on a 2D Array.
+Ans. //Program to add 2 Matrix
+     import java.util.Scanner;
+     public class MatrixAdd{
+        public static void main(String[] args){
+        int[][] mat1 = new int[3][3];
+        int[][] mat2 = new int[3][3];
+        int[][] resMat = new int[3][3];
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ënter the elements of matrix1 : ");
+        for(int i = 0; i < 3; i++){
+           for(int j = 0; j < 3; j++){
+             mat1[i][j] = sc.nextInt();
+            }
+          }
+        System.out.println("Ënter the elements of matrix2 : ");
+        for(int i = 0; i < 3; i++){
+           for(int j = 0; j < 3; j++){
+             mat2[i][j] = sc.nextInt();
+            }
+          }
+        System.out.println("The addition : ");
+        for(int i = 0; i < 3; i++){
+           for(int j = 0; j < 3; j++){
+             resMat[i][j] = mat1[i][j] + mat2[i][j];
+             System.out.println(resMat[i][j]+" ");
+            }
+           System.out.println();
+          }
+        }
+     }
+      

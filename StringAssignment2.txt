@@ -1,0 +1,73 @@
+1. Write a simple String program to take input from user.
+Ans. import java.util.Scanner;
+      public class Main{
+      public static void main(String[] args){  
+        String str;
+        Scanner scan = new Scanner(System.in);
+        str = scan.next();
+        System.out.println(str);
+      }
+    }
+
+2. How do you concatenate two strings in java? Give an example.
+Ans. We can concatenate two strings in java by using the '+' operator and concat() pre-defined method : 
+     e.g. of '+' : String str = "String"+"Concate";
+                   System.out.println(str);        //Output - StringConcate
+     
+     e.g. of concat() : String s1 = "String";
+                        String s2 = "Concate";
+                        String s3 = s1.concat(s2);
+                        System.out.println(s3);     //Output - StringConcate
+
+3. How do you find the length of a String in java? Explain with an example.
+Ans. In java, the length of the String in find out by using the length() pre-defined method. For e.g. - 
+     String str = new String("Hello Everyone");
+     int lengthOfString = str.length();
+     System.out.println(lengthOfString);       //Output - 14
+
+4. How do you compare two Strings in java? Give an example.
+Ans. In java, we use the equals() pre-defined method to compare two strings. For e.g. - 
+     String str1 = new String("Hello");
+     String str2 = "Hello";
+     System.out.println(str1.equals(str2));   //Output - true
+
+5. Write a program to find the length of the String "refrigerator".
+Ans. public class Ref{
+      public static void main(String[] args){
+       String st = "refrigerator";
+       System.out.println(st.length());             //Output - 12
+      }
+     }
+
+6. Write a program to check if the letter 'e' is present in the word "Umbrella".
+Ans. public class Strings {
+      public static void main(String[] args) {
+      String str = "Umbrella";
+      boolean isPresent = false;
+      if(str.indexOf("e")>=0){
+        isPresent = true;
+      }
+      if(isPresent){
+        System.out.println("e is present in Umbrella");
+      }
+      else{
+        System.out.println("e is not present in Umbrella");
+      }
+     }  
+   }
+
+7. Write a program to delete all the consonants from the String "Hello, have a good day".
+Ans. class ConsToVov{
+     String RepConsToVov(String str){
+        return str.replaceAll("[BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]", "");
+       }
+     }
+    public class RepCons{
+     public static void main(String[] args){
+        String str = "Hello, have a good day";
+        ConsToVov obj = new ConsToVov();
+        String st = obj.RepConsToVov(str);
+        System.out.println(st);
+     }
+   }
+     

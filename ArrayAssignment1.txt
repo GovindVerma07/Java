@@ -1,0 +1,27 @@
+1. What is default value of Array for different data types?
+Ans. For int data type the default value is 0.
+     For floating point numbers the default value is 0.0.
+     For char data type the default value is null or 0 ASCII value.
+     For String data type the default value of array is null.
+
+2. Can you pass the negative number in Array size?
+Ans. When we pass the negative number in Array size then at runtime of the program it throws an exception i.e. 'NegativeArraySizeException'.
+
+3. Where does array stored in JVM?
+Ans. Array stored in heap area or heap memory of JVM.
+
+4. What are disadvantages of Array?
+Ans. i. Array can store only distinguish or similar type of data.
+     ii. Array has fixed size.
+     iii. Time complexity for searching and sorting is high.
+
+5. What is an Anonymous Array? Give an example.
+Ans. An Array without name is called as Anonymous array. They are created only for one time use and it is passed as an argument to any method.
+     for e.g. - new int[]{4,3,2,1};
+
+6. What are different ways to traverse an Array in java? 
+Ans. We can traverse an Array in java using for loop and for-each loop or enhanced for loop.
+
+7. What is the difference between length and length() method? Give an example.
+Ans. The length is used in array to find out the number of element present in an Array or the length/size of an Array whereas the length() method is used in String to find out the size of a
+     String.
