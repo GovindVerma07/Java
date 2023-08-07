@@ -1,0 +1,115 @@
+1. What is Inheritance in java?
+Ans. Inheritance is one of the key concept of Oop's in which one class or child class can inherits the properties and behaviour of another class or parent class. By using inheritance code reuseability is increased.
+
+2. What is superclass and subclass?
+Ans. Superclass is also known as parent class or base class. It is that class which being inherited from.
+    Subclass is also known as child class or derived class. It is that class which inherits the properties and method of their parent class.
+
+3. How is inheritance implemented/achieved in java?
+Ans. In java Inheritance is implemented/achieved by using extends keyword.
+
+4. What is polymorphism?
+Ans. Polymorphism is a greek word which means many forms. An entity can perform multiple roles according to their behaviour is called 
+     polymorphism.
+
+5. Differentiate between method overloading and overriding.
+Ans. Method Overloading is a compile time process whereas Method Overriding is runtime process.
+     In method overloading multiple methods have same name but different parameters whereas in method overriding a method can rewrite or
+     override their body according to their need. 
+     Method overloading is also known as early binding or compile time polymorphism whereas method overriding is also known as late binding
+     or runtime polymorphism.
+
+6. What is an abstraction explained with an example?
+Ans. Abstraction is a technique of hiding certain details and showing only essential information.
+     It can be achieved by using abstract keyword to the class or method. for e.g. - 
+     
+     abstract class Animal{
+       abstract public void sound();
+       public void sleep(){
+         System.out.println("sleeping...");
+       }
+     }
+
+7. What is the difference between an abstract method and final method in java? Explain with an example.
+Ans. An abstract method is persent in abstract class and abstract method doesn't have body. An abstract method is initialize or defined in
+     their base calss. for e.g. 
+     abstract class People{
+        int age;
+        abstract public void age();
+      } 
+     class Student extends People{
+       public void age(){
+            age = 17;
+         System.out.println("Student age : "+age);
+       }
+     }
+      class Employee extends People{
+       public void age(){
+            age = 27;
+         System.out.println("Employee age : "+age);
+       }
+     }
+     public class Main{
+       public static void main(String[] args){
+        Student std = new Student();
+        Employee emp = new Employee();
+        std.age();
+        emp.age();
+      }
+     }
+
+   Final Method:- If a method is declared as final then it can't be overridden. 
+    People{
+       final public void age(){
+          int age = 17;
+         System.out.println("People age : "+age);
+       }
+     }
+
+8. What is the final class in java?
+Ans. If a class is declared as final then it can't be inherit.
+
+9. Differentiate between abstraction and encapsulation.
+Ans. Abstraction is a technique of hiding certain details and showing only essential information. It can be achieved by using abstract  
+     keyword to the class or method.
+     Whereas Encapsulation is a technique of binding the methods and properties into a single unit.
+
+10. Differentiate between runtime and compile time polymorphism explain with an example.
+Ans. Compile time polymorphism is also known as method overloading in which multiple methods are present with the same name and different
+     paremeters. for e.g. - 
+     class Addition{
+       int a,b,c;
+       public int add(int a,int b){
+         return a+b;
+        }
+       public int add(int a,int b,int c){
+         return a+b+c;
+        }
+     }
+    public class Sum{
+     public static void main(String[] args){
+       Addition ad = new Addition();
+       System.out.println(ad.add(3,4));
+       System.out.println(ad.add(3,4,5));
+      }
+    }
+
+   Runtime polymorphism is also known as method overriding in which a method can rewrite or override their body according to their need.     
+   for e.g.- 
+   class Person{
+    public void per(){
+     System.out.println("Person class");
+    }
+    }
+    class Student extends Person{
+     public void per(){
+     System.out.println("Student class");
+    }
+    }
+   public class Main{
+     public static void main(String[] args){
+       Student std = new Student();
+        std.per();
+     }
+   }
+   
