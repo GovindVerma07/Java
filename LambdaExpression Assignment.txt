@@ -1,0 +1,15 @@
+1. What is the lambda expression of java 8?
+Ans. Lambda expression is used to provide a body or define a abstract method of the functional interface by using the lambda operator
+     i.e. (->).
+
+2. Can you pass lambda expressions to a method? When?
+Ans. Yes, we can pass a lambda expression to a method provided it is expecting a functional interface. 
+
+3. What is the functional interface in java 8?
+Ans. Functional interface is nothing but an interface with a single abstract method.
+
+4. Why do we use lambda expression in java?
+Ans. Lambda expression is used to provide a body or define a abstract method of the functional interface.
+
+5. Is it mandatory for a lambda expression to have parameters?
+Ans. No, it is not mandatory for a lambda expression to have parameters because the zero parameters lambda expression is also possible which is denoted by ().

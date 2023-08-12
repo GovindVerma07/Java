@@ -1,0 +1,22 @@
+1. What is an interface in java?
+Ans. An interface is used in java to achieve 100% abstraction and multiple inheritance that is not possible in inheritance concept. An 
+     interface can contain only abstract methods before the java-8.
+
+2. Which modifiers are allowed for methods in an interface? Explain with an example.
+Ans. All methods inside the interface are by default public and abstract if we declare or not. So, only public and default modifiers are 
+     allowed in an interface. for e.g. - 
+      interface calc{
+       void method();
+     }
+
+3. What is the use of interface in java? Or, why we use interface in java?
+Ans. An interface is used in java to achieve 100% abstraction and multiple inheritance that is not possible in inheritance concept. 
+     Interface is used to achieve loose coupling.
+     We use interface to increase the performance of code, provide security to code and remove the dependency. 
+
+4. What is difference between abstract class and interface in java?
+Ans. If we doesn't have complete implementation then we use abstraction whereas if we doesn't have any kind of implementation or zero
+     implementation than we use interface.
+     In interface every methods are by default public and abstract and data members are public static final whereas in abstract classes
+     there is no boundation.
+     
