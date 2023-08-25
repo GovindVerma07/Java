@@ -1,0 +1,35 @@
+1. What is the collection framework in java?
+Ans. Collection framework is the group of classes and interface, It is used to represent a group of individual objects as a single entity.
+
+2. What is the difference between ArrayList and LinkedList?
+Ans. (i) ArrayList uses a dynamic array whereas LinkedList uses doubly LinkedList.
+    (ii) ArrayList provides random access whereas LinkedList doesn't provides random access.
+   (iii) ArrayList is better to store and fetch data whereas LinkedList is better to manipulate data.
+
+3. What is the difference between Iterator and ListIterator?
+Ans. (i) By using Iterator we can move only towards forward direction and we can't move backward direction whereas by using ListIterator
+         we can move in both directions forward and backward.
+    (ii) By using Iterator we can perform only read and remove operations and we can't perform Addition of new objects and replacing new
+         objects whereas by using ListIterator we can perform addition of new objects and replacing new objects operations and also read
+         and remove operations.
+
+4. What is the difference between Enumeration and Iterator?
+Ans. (i) Enumeration concept is applicable only for lagacy classes whereas Iterator concept is applicable for both lagacy and collection
+         classes.
+    (ii) In Enumeration we can perform only read operation whereas In Iterator we can perform both read and remove operation.
+   (iii) Enumeration is faster than Iterator.
+
+5. What is the difference between List and Set?
+Ans. (i) List can contain duplicate values whereas set doesn't contain duplicate values.
+    (ii) The List is an ordered collection which maintains the insertion order whereas Set is an unordered collection which does not 
+         preserve the insertion order.
+
+6. What is the difference between HashSet and TreeSet?
+Ans. (i) HashSet is implemented through Hash Table whereas TreeSet is implemented through BalanceTree.
+    (ii) HashSet is an unordered set of collection whereas TreeSet is a sorted set of collection.
+   (iii) HashSet uses less memory than TreeSet.
+
+7. What is the difference between Array and ArrayList?
+Ans. (i) Array is used only when size is fixed whereas ArrayList is used for dynamic size.
+    (ii) Arrays are memory wise not recommended to use whereas ArrayList is memory wise recommended to use.
+   (iii) In Array only homogeneous data are allowed whereas In ArrayList both homogeneous and heterogeneous data allowed.
