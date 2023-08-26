@@ -1,0 +1,36 @@
+1. What is a Map in java?
+Ans. To represent a group of individual objects as a key value pair then we need to go for Map.
+
+2. What are the commonly used implementations of Map in java?
+Ans. The commonly used implementations of Map in java are HashTable, HashMap, LinkedHashMap and TreeMap.
+
+3. What are the difference between HashMap and TreeMap?
+Ans. HashMap is an unordered collection that usage hashing to store the key value pairs, while TreeMap is a sorted collection that stores
+     the kay value pairs in a sorting order based on the natural order of keys.
+
+4. How do you check if a key exists in a Map in Java?
+Ans. We can check if a key exists in a Map in java using the containsKey() method or the get() method.
+
+5. What are Generics in java?
+Ans. Generics in java are used to provide type safety and reduce code redundancy by allowing the use of generic types.
+
+6. What are the benefits of using Generics in java?
+Ans. The benefits of using Generics in java are - 
+     Type safety
+     Code reusability
+     Improved readability etc.
+
+7. What is a Generic class in java?
+Ans. A Generic Class in Java is a class that can work with different types of data. It is defined using a type parameter enclosed in 
+     angle brackets, which represents the type of data being used.
+
+8. What is a Type Parameter in java Generics? 
+Ans.  A Type Parameter in Java Generics is a placeholder for the type of data that is used by a generic class or method. 
+
+9. What is a Generic method in java?
+Ans. A Generic Method in Java is a method that can work with different types of data. It is defined using a type parameter enclosed in    
+     angle brackets, which represents the type of data being used.
+
+10. What is the difference between ArrayList and ArrayList<T>?
+Ans. ArrayList is a non-generic class, while ArrayList<T> is a generic class. ArrayList<T> provides type safety, as it can only store 
+     elements of the specified type, whereas ArrayList can store any type of element.
