@@ -1,0 +1,42 @@
+1. What is Input and Output Stream in Java?
+Ans. The InputStream is used to read data from a source and OutputStream is used to write data to a destination.
+
+2. What are the methods of OutputStream?
+Ans. Methods of OutputStream are : write(), close(), and flush().
+
+3. What is Serialization in Java?
+Ans. Serialization is a process of converting an object into a stream of bytes to transfer it into a network or to store it in a file
+     or database.
+
+4. What is the Serializable interface in Java?
+Ans. The Serializable interface in Java is a marker interface that has no methods. It is used to mark classes that can be serialized,
+     meaning their object instances can be converted into a stream of bytes.
+
+5. What is Deserialization in Java?
+Ans. Deserialization is the process of converting a stream of bytes back into an object instance. This is done after an object has been
+     serialized.
+
+6. How is Serialization is achieved in Java?
+Ans.  Serialization is achieved in Java by implementing the Serializable interface. When an object is serialized, its state is converted
+      into a stream of bytes, which can then be transferred over a network or stored in a file or database.
+
+7. How is Deserialization is achieved in Java?
+Ans. Deserialization is achieved in Java by reading a stream of bytes and using them to recreate the original object instance.
+
+8. How can you avoid certain member variables of class from getting Serialized?
+Ans. Mark member variables as static or transient, than those member variables will no more be a part of Serialization.
+
+9. What classes are available in the Java IO file classes API?
+Ans. The following classes are available in the Java IO API and are important to work with files in Java.
+      (i) File
+     (ii) RandomAccessFile
+    (iii) FileInputStream
+     (iv) FileReader
+      (v) FileOutputStream
+     (iv) FileWriter
+
+10. What is the difference between Externalizable and Serialization interface?
+Ans.  (i) Serialization means default Serialization whereas Externalizable means customized Serialization.
+     (ii) In Serialization everything is taken care by JVM whereas In Externalizable everything is taken care by programmer.
+    (iii) In Serialization perfomance is low whereas In Externalizable relatively perfomance is high.
+     (iv) transient keyword play a role in Serialization whereas transient keyword doesn't play a role in Externalizable.
