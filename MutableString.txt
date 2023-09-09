@@ -1,0 +1,65 @@
+1. What is Mutable String in Java? Explain with an example.
+Ans. Once if we create a String, on that String if we try to perform any operation and if those changes get reflected in the same object 
+     then such strings are called “Mutable String”.
+      Example: StringBuffer, StringBuilder
+
+2. WAP to reverse a String
+    Input : "PWSKILLS"
+    Output : "SLLIKSWP"
+Ans. public class RevreseString {
+      public static void main(String[] args){
+        String str1 = "PWSKILLS";
+        String str2 = "";
+        for(int i = str1.length()-1; i >= 0; i--){
+          str2 += str1.charAt(i);
+        }
+        System.out.println("Before reverse : "+str1);
+        System.out.println("After reverse : "+str2);
+      }
+     }
+
+3. WAP to reverse a sentence while preserving the position 
+    Input : "Think Twice"
+    Output : "kniht eciwt"
+Ans. public class RevreseString {
+      public static void main(String[] args){
+        String str1 = "Think Twice";
+        String str2 = "";
+        str1 = str1.toLowerCase();
+        String[] sarr = str1.split(" ");
+        for(String s:sarr){
+        for(int i = s.length()-1; i >= 0; i--){
+          str2 += s.charAt(i);
+        }
+        str2 += " ";
+      }
+        System.out.println("After reverse : "+str2);
+     }
+   }
+
+4. WAP to sort a String Alphabetically.
+Ans. public class RevreseString {
+      public static void main(String[] args){
+		String str = "govindverma";
+		char arr[] = str.toCharArray();
+		char temp;
+
+		int i = 0;
+		while (i < arr.length) {
+			int j = i + 1;
+			while (j < arr.length) {
+				if (arr[j] < arr[i]) {
+				
+					temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+				j += 1;
+			}
+			i += 1;
+          }
+		System.out.println(arr);
+	}
+     }
+
+
