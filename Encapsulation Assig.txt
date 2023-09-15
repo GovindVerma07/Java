@@ -1,0 +1,52 @@
+1. What is Encapsulation in Java? Why it is called data hiding?
+Ans. Binding of data members and methods into a single unit is called as Encapsulation. In Encapsulation we hide the data members i.e. 
+     important part of our program by using private keyword and use them outside of class by using getters and setters that's why 
+     Encapsulation is called data hiding.
+
+2. What are the important features of Encapsulation?
+Ans. i. Hiding the data.
+    ii. Biding data members and method into a single unit.
+   iii. Getters and setters are used to access data members of a class.
+
+3. What are getter and setter method in Java? Explain with an example.
+Ans. getter method are used to getting the private members of a class to outside class and setters are used to initialize the private 
+     members of a class. getters and setters are used to provide access of data members of a class outside of that class. for e.g. -
+     class Std{
+      private int age;
+      public void setAge(int age){
+        this.age = age;
+       }
+      public int getAge(){
+        return age;
+       }
+     }
+
+4. What is the use of this keyword explain with an example?
+Ans. this keyword is used for solve the name confliction between instance and local variables that have same name or we can say that this
+     keyword solve shadowing problem. for e.g. -
+          class Std{
+      private int age;
+      public void setAge(int age){
+        this.age = age;
+       }
+      public int getAge(){
+        return age;
+       }
+     }
+
+5. What is the advantage of Encapsulation?
+Ans. Encapsulation is used to provide security of our most important data by using the private keyword or restrict the direct access of 
+     data members outside of class.
+
+6. How to achieve Encapsulation in Java? Give an example.
+Ans. Encapsulation is achieved by using private keyword of our data members in the class and by using getters and setters for that data 
+     members.
+      class Std{
+      private int age;
+      public void setAge(int age){
+        this.age = age;
+       }
+      public int getAge(){
+        return age;
+       }
+     }
