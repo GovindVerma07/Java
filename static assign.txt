@@ -1,0 +1,32 @@
+1. Why do we need static keyword in java? Explain with an example.
+Ans. Static keyword is used for accessing the properties and method of a class in outside of that class without creating an object of that class and also for memory utilization. If we declare a method or variable as static than only single copy of data will be created and that will be shared to all object when they called them. for e.g. main() method is declared as static so no need of creation of object of that class in which main method is declared.
+
+2. What is class loading and how does java program actually executes?
+Ans. In Java, classloading is the process of loading class files into the JVM (Java Virtual Machine) at runtime. It is responsible for loading classes from various sources, such as the file system, network, and databases, and making them available to the JVM for execution.
+Execution of Java program:
+At first javac compile the source code and generate byte code or .class file that .class file will be executed by JVM and give the machine code.
+
+3. Can we mark a local variable as static?
+Ans. No, We can't mark a local variable as static.
+
+4. Why is a static block executed before the main method in java?
+Ans. In Java static block is used to initialize the static data members. Important point to note is that static block is executed before the main method at the time of class loading.
+
+5. Why is a static method also called a class method?
+Ans. A static method is called a class method because it is called by using the class name like - className.methodName;
+
+6. What is the use of static blocks in java?
+Ans. In Java static blocks are used to initialize the static data members.
+
+7. Difference between static and instance variables.
+Ans. (i) static variables are defined by using static keyword whereas instance variables are normally defined without static keyword.
+    (ii) static variables are used in static and non static both block but instance are not used in static block.
+   (iii) for static varialbes memory is allocated at the class loading time whereas for instance variables memory is allocated at the
+         object creation time.
+
+8. Difference between static and non static members.
+Ans. (i) static members are defined by using static keyword whereas non static members are normally defined without static keyword.
+    (ii) static members are directly called with the help of class name without creation of an object whereas non static members are
+         called by creation of an object.
+   (iii) for static members memory is allocated at the class loading time whereas for non static members memory is allocated at the
+         object creation time.

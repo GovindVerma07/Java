@@ -1,0 +1,30 @@
+1. What is Constructor?
+Ans. Whenever we creating an object's some piece of code will be executed automatically to perform initialization of an object. This piece of code is nothing but a constructor.
+
+2. What is Constructor Chaining?
+Ans. When we call a constructor with the help of another constructor then this technique is called as constructor chaining. This is achieved by using super() and this() method.
+
+3. Can we call a subclass constructor from a superclass constructor?
+Ans. No, we cannot call subclass constructor from superclass constructor.
+
+4. What happens if you keep a return type for a constructor?
+Ans. If we keep a return type for a constructor then it will treated as a method of the class.
+
+5. What is No-arg constructor?
+Ans. If you explicity define a default constructor in the class then it is called as No-arg constructor.
+
+6. How is a No-argument constructor is different from the default constructor?
+Ans. If we doesn't specify any constructor inside the class then jvm automatically or implicitly generate a constructor with 0 parameters. It is called as default constructor.
+If programmer explicitly define a default constructor in the class then it is called as No-argument constructor.
+
+7. When do we need constructor overloading?
+Ans. If we want to perform multiple task with same constructor with different parameters then constructor overloading is prefered.
+
+8. What is default constructor? Explain with an example.
+Ans. A constructor with 0 parameter is called as default constructor. If we doesn't specify any constructor inside the class then jvm automatically or implicitly generate a constructor with 0 parameters. It is called as default constructor. for e.g. - 
+ 
+class Demo{
+  Demo(){
+     System.out.println("Default Constructor");
+   }
+} 
